@@ -229,6 +229,13 @@ def lst_inord(root):
         return []
     return lst_inord(root.left) + [root.data] + lst_inord(root.right)
 
+def mirror( root):
+    if root == None:
+        return
+    mirror(root.left)
+    mirror(root.right)
+    root.left, root.right = root.right, root.left
+
 
 def bt_to_bst(root, arr):
     if root is None:
@@ -307,3 +314,11 @@ print('r--vw--v-down')
 print(right_view(root))
 print('---dr--')
 print(diameter(root))
+'''
+#mirror function driver code
+
+print("lvl order befor mrror: ",leveorder(root))
+mirror(root)
+print("lvl order after mrror: ",leveorder(root))
+'''
+
