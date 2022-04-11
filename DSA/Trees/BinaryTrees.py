@@ -204,7 +204,7 @@ def right_view(root):
         qu = nxt_qu
         res.append(lvl[-1])
     return res
-
+'''
 
 def diameter(root):
     st = [root]
@@ -222,7 +222,7 @@ def diameter(root):
         if a.left is not None:
             st.append(a.left)
     return drs
-
+'''
 
 def lst_inord(root):
     if root is None:
@@ -313,7 +313,7 @@ print(zigzag(root))
 print('r--vw--v-down')
 print(right_view(root))
 print('---dr--')
-print(diameter(root))
+#print(diameter(root))
 '''
 #mirror function driver code
 
